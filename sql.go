@@ -116,3 +116,20 @@ func (e *DB) Transaction(fn func(tx *Tx) error) error {
 	panicked = false
 	return err
 }
+
+// Generate struct by table (通过表结构生成结构体)
+func (e *DB) GenStructByTable(mode, dbName, savePath string, hasTag bool) error {
+	var err error
+	switch mode {
+	case Mysql:
+		err = genStructByMysqlTable(e, dbName, savePath, hasTag)
+	case Postgres:
+		err = genStructByPostgresSqlTable(e, dbName, savePath, hasTag)
+	case SQLite:
+		err = genStructBySQLiteTable(e, dbName, savePath, hasTag)
+	default:
+
+	}
+
+	return err
+}
