@@ -1,0 +1,4 @@
+github.com/cyj19/esql v0.1.0 h1:pxLTdmXPuPz4KxfBACIJTgCQHRef+GQJDQJtN4mD1tg=
+github.com/cyj19/esql v0.1.0/go.mod h1:swIDPpX2QawHPMlkorAhFn+mbnNFShIjK0Wk5/aUxqs=
+github.com/go-sql-driver/mysql v1.6.0 h1:BCTh4TKNUYmOmMUcQ3IipzF5prigylS7XXjEkfCHuOE=
+github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
